@@ -10,3 +10,13 @@
   -`npm install babel webpack webpack-dev-server -g`
 -`webpack.config.js`
   -compile JS/JSX, launches development server
+
+-React.createElement can only return one node
+  - This will not work:
+    </div></div>
+    <span>Hello World</span>
+  -But this will:
+    <div>
+      <span>Hello World</span>
+    </div>
+
